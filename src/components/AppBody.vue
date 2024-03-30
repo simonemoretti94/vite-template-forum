@@ -17,7 +17,7 @@ export default {
                             <i class="fa fa-car"></i>
 
                         </div>
-                        <div class="subforum-description subforum-column center">
+                        <div class="subforum-description subforum-column center flex-column">
                             <h1><a href="#">Description title:</a></h1>
                             <p>Description content: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Reprehenderit,
@@ -50,6 +50,12 @@ export default {
     padding: 5px;
     border-radius: 5px;
     margin: 4px;
+}
+
+.subforum-description {
+    >h1 {
+        text-align: left;
+    }
 }
 
 .subforum-row {
