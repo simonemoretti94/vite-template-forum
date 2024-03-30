@@ -13,22 +13,24 @@ export default {
                         <h1>General informations</h1>
                     </div>
                     <div class="subforum-row">
-                        <div class="subforum-icon subforum-column">
+                        <div class="subforum-icon subforum-column center">
                             <i class="fa fa-car"></i>
 
                         </div>
-                        <div class="subforum-description subforum-column">
+                        <div class="subforum-description subforum-column center">
                             <h1><a href="#">Description title:</a></h1>
                             <p>Description content: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Reprehenderit,
                                 similique.</p>
                         </div>
-                        <div class="subforum-stats subforum-column">
+                        <div class="subforum-stats subforum-column center">
                             <span>24 Posts | 15 Topics</span>
                         </div>
-                        <div class="subforum-info subforum-column">
-                            <b><a href="#">Last Post</a></b> by <b><a href="#">RandomGuyFakwes</a></b> on
-                            <small>30 Mar 2024</small>
+                        <div class="subforum-info subforum-column center">
+                            <p>
+                                <b><a href="#">Last Post</a></b> by <b><a href="#">RandomGuyFakwes</a></b> <br> on
+                                <small>30 Mar 2024</small>
+                            </p>
 
                         </div>
                     </div>
@@ -60,5 +62,9 @@ export default {
     margin: 4px;
     border-radius: 5px;
     background-color: #111314;
+}
+
+.subforum-icon {
+    font-size: 20px;
 }
 </style>
