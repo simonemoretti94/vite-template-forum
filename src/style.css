@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+
+  & a {
+    color: red;
+    text-decoration: none;
+  }
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
