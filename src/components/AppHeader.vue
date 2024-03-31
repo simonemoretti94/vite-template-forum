@@ -88,6 +88,20 @@ export default {
             <div :style="brandResize" class="brand">My Forum
             </div>
         </div>
+
+        <!-- search box -->
+
+        <div class="search-box">
+            <div>
+                <select name="" id="search-box-select">
+                    <option value="all">All</option>
+                    <option value="title">Title</option>
+                    <option value="description">Description</option>
+                </select>
+                <input type="text" id="search-box-input" placeholder="write here..." name="search-box-input">
+                <button id="button-search"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
     </header>
 </template>
 
@@ -172,6 +186,34 @@ header {
     cursor: pointer;
 }
 
+/* search box */
+
+.search-box {
+    border: solid 1 px #52057b;
+    margin-top: 1.5rem;
+    padding: 40px;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    box-shadow: 1px 2px 3px #52057b;
+}
+
+.search-box select,
+input,
+button#button-search {
+    padding: 6px;
+    background-color: #fff;
+    color: #000;
+    margin: auto .1rem;
+}
+
+.search-box button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+    ;
+}
+
 @media screen and (max-width: 606px) and (min-width: 606px) {
     #close-icon {
         width: 15%;
@@ -227,6 +269,18 @@ header {
 
     #navigation {
         min-height: 100px;
+    }
+
+
+    .search-box select,
+    input,
+    button#button-search {
+        min-width: 300px;
+        margin-top: .5rem;
+    }
+
+    button#button-search {
+        border: 0;
     }
 
 }
