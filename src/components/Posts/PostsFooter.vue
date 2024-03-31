@@ -3,3 +3,22 @@ export default {
     name: 'PostsFooter',
 }
 </script>
+
+
+<template>
+    <footer>
+        <span>
+            &copy; &nbsp;Simone Moretti | All rights reserved <a href="../../posts.html">Index</a>
+        </span>
+    </footer>
+</template>
+
+<style scoped>
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #52057b;
+    display: block;
+    text-align: center;
+}
+</style>

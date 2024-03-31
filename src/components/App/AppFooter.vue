@@ -12,7 +12,7 @@ export default {
 <template>
     <footer>
         <span>
-            &copy; &nbsp;Simone Moretti | All rights reserved <a href="../../posts.html">link</a>
+            &copy; &nbsp;Simone Moretti | All rights reserved <a href="../../posts.html">Posts</a>
         </span>
     </footer>
 </template>
