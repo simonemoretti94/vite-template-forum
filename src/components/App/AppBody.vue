@@ -141,6 +141,22 @@ export default {
 
             </div>
         </section>
+
+        <!-- Forum info -->
+        <section>
+            <div class="forum-info">
+                <div class="chart">
+                    My Forum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
+                </div>
+                <div>
+                    <span>
+                        <u>5,369</u> Posts in <u>1,210</u> Topics by <u>45,214 Users</u>
+                    </span><br>
+                    <span>Latest Post: <b><a href="#">Random Post</a></b> on 31 March 2024 by <a href="#">Random
+                            User</a></span>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -224,6 +240,16 @@ export default {
         height: 1px;
         margin: 1rem auto;
         background-image: linear-gradient(90deg, black, white, black);
+    }
+
+    .forum-info {
+        padding: 20px;
+        background-color: #111314;
+    }
+
+    .chart {
+        font-size: 15px;
+        font-weight: bold;
     }
 }
 
