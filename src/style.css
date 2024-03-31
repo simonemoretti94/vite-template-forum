@@ -40,3 +40,8 @@ html {
 .flex-row {
   flex-direction: row;
 }
+
+
+.hide {
+  display: none !important;
+}
