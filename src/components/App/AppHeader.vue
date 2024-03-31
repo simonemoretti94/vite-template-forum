@@ -79,7 +79,7 @@ export default {
                     <span id="closeIcon" class="close-icon" @click="showIcon()"><i class="fa fa-close"></i></span>
                     <div id="wrapper" class="wrapper">
                         <li class="nav-item"><a href="#">Home</a></li>
-                        <li class="nav-item"><a href="#">Forum</a></li>
+                        <li class="nav-item"><a href="./../../../posts.html">Posts</a></li>
                         <li class="nav-item"><a href="#">Details</a></li>
                     </div>
                 </ul>

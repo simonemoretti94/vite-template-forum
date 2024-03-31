@@ -14,7 +14,7 @@ export default {
                     </div>
                     <div class="subforum-row">
                         <div class="subforum-icon subforum-column center">
-                            <i class="fa fa-fire"></i>
+                            <i class="fa fa-water"></i>
 
                         </div>
                         <div class="subforum-description subforum-column center flex-column">
@@ -42,7 +42,7 @@ export default {
                     </div>
                     <div class="subforum-row">
                         <div class="subforum-icon subforum-column center">
-                            <i class="fa fa-car"></i>
+                            <i class="fa fa-wind"></i>
 
                         </div>
                         <div class="subforum-description subforum-column center flex-column">
@@ -68,7 +68,7 @@ export default {
 
                 <div class="subforum-row">
                     <div class="subforum-icon subforum-column center">
-                        <i class="fa fa-car"></i>
+                        <i class="fa fa-cloud"></i>
 
                     </div>
                     <div class="subforum-description subforum-column center flex-column">
@@ -93,7 +93,7 @@ export default {
 
                 <div class="subforum-row">
                     <div class="subforum-icon subforum-column center">
-                        <i class="fa fa-car"></i>
+                        <i class="fa fa-earth"></i>
 
                     </div>
                     <div class="subforum-description subforum-column center flex-column">
@@ -118,7 +118,7 @@ export default {
 
                 <div class="subforum-row">
                     <div class="subforum-icon subforum-column center">
-                        <i class="fa fa-car"></i>
+                        <i class="fa fa-moon"></i>
 
                     </div>
                     <div class="subforum-description subforum-column center flex-column">
