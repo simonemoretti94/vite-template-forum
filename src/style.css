@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 12px;
   background-color: black;
   font-family: sans-serif;
   color: #FEFEFE;
@@ -17,7 +17,7 @@ html {
   }
 
   & h1 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bolder;
   }
 }
