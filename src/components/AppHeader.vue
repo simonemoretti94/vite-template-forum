@@ -76,8 +76,8 @@ export default {
         <div class="navbar">
             <nav id="navigation" class="navigation hide">
                 <ul class="nav-list">
-                    <span class="close-icon" @click="showIcon()"><i class="fa fa-close"></i></span>
-                    <div class="wrapper">
+                    <span id="closeIcon" class="close-icon" @click="showIcon()"><i class="fa fa-close"></i></span>
+                    <div id="wrapper" class="wrapper">
                         <li class="nav-item"><a href="#">Home</a></li>
                         <li class="nav-item"><a href="#">Forum</a></li>
                         <li class="nav-item"><a href="#">Details</a></li>
@@ -112,16 +112,28 @@ header {
                 list-style-type: none;
                 overflow: hidden;
                 display: flex;
+                align-items: start;
 
                 >.close-icon {
-                    width: 20%;
-                    font-size: 40px;
+                    width: 10%;
                     float: left;
                     cursor: pointer;
+                    font-size: 40px;
+                    padding: 0 .2rem;
+                    border: solid .5px black;
+                    border-radius: 5px;
+
+                    background-color: rgb(0, 0, 0);
+                    box-shadow: 1.5px 2px 3px rgba(165, 32, 165, 0.593);
+                }
+
+                >.close-icon:hover {
+                    background-color: white;
+                    color: black;
                 }
 
                 & div.wrapper {
-                    width: 80%;
+                    width: 90%;
                     display: flex;
                     justify-content: space-evenly;
 
@@ -160,6 +172,16 @@ header {
     cursor: pointer;
 }
 
+@media screen and (max-width: 606px) and (min-width: 606px) {
+    #close-icon {
+        width: 15%;
+    }
+
+    #div.wrapper {
+        width: 85%;
+    }
+}
+
 /* navbar for smartphones viewport */
 @media screen and (max-width: 450px) {
     .navigation {
@@ -176,10 +198,14 @@ header {
 
                 >.nav-list {
                     >.close-icon {
+                        width: 20%;
+                        float: right;
+                        text-align: center;
                         font-size: 30px;
                     }
 
                     & div.wrapper {
+                        width: 80%;
                         flex-wrap: wrap;
 
                         & .nav-item {
