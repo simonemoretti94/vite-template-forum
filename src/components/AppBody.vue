@@ -24,11 +24,11 @@ export default {
                                 similique.</p>
                         </div>
                         <div class="subforum-stats subforum-column center">
-                            <span>24 Posts | 15 Topics</span>
+                            <span>24 Posts/<br> 15 Topics</span>
                         </div>
                         <div class="subforum-info subforum-column center">
                             <p>
-                                <b><a href="#">Last Post</a></b> by <b><a href="#">RandomGuyFakwes</a></b> <br> on
+                                <b><a href="#">Last Post</a></b> by <b><a href="#">RandomGuyFakwes</a></b> <br>on
                                 <small>30 Mar 2024</small>
                             </p>
 
@@ -52,15 +52,20 @@ export default {
     margin: 4px;
 }
 
-.subforum-description {
-    >h1 {
-        text-align: left;
-    }
-}
-
 .subforum-row {
     display: grid;
     grid-template-columns: 7% 60% 13% 20%;
+
+    & h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    & .subforum-info {
+        >p {
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .subforum-column {
@@ -71,6 +76,38 @@ export default {
 }
 
 .subforum-icon {
-    font-size: 20px;
+    font-size: 22px;
+}
+
+/* Smartphones Viewport */
+@media screen and (max-width: 460px) {
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subforum-row {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+
+    .subforum-icon {
+        font-size: 40px
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .container {
+        margin: 15PX;
+        padding: 15px;
+    }
+
+    .subforum-row {
+        display: grid;
+        grid-template-columns: 10% 60% 10% 20%;
+
+    }
 }
 </style>

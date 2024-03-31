@@ -5,13 +5,20 @@
 }
 
 html {
+  font-size: 14px;
   background-color: black;
   font-family: sans-serif;
-  color: white;
+  color: #FEFEFE;
 
   & a {
     color: red;
     text-decoration: none;
+    font-weight: bolder;
+  }
+
+  & h1 {
+    font-size: 16px;
+    font-weight: bolder;
   }
 }
 
@@ -30,13 +37,6 @@ html {
   flex-direction: column;
 }
 
-@media screen and (max-width: 450px) {
-  p {
-    font-size: 10px;
-  }
-
-  a {
-    color: blue;
-    font-size: 10px;
-  }
+.flex-row {
+  flex-direction: row;
 }
