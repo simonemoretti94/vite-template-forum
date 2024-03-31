@@ -77,9 +77,11 @@ export default {
             <nav id="navigation" class="navigation hide">
                 <ul class="nav-list">
                     <span class="close-icon" @click="showIcon()"><i class="fa fa-close"></i></span>
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">Forum</a></li>
-                    <li class="nav-item"><a href="#">Details</a></li>
+                    <div class="wrapper">
+                        <li class="nav-item"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#">Forum</a></li>
+                        <li class="nav-item"><a href="#">Details</a></li>
+                    </div>
                 </ul>
             </nav>
             <a id="iconBar" href="#" class="bars-icon" @click="hideIconBar()"><i class="fa fa-bars"></i></a>
@@ -110,28 +112,35 @@ header {
                 list-style-type: none;
                 overflow: hidden;
                 display: flex;
-                justify-content: space-evenly;
 
                 >.close-icon {
+                    width: 20%;
                     font-size: 40px;
                     float: left;
                     cursor: pointer;
                 }
 
-                & .nav-item {
-                    >a {
-                        display: block;
-                        text-align: center;
-                        font-size: 20px;
-                        padding: 10px;
-                        color: #fff;
-                    }
+                & div.wrapper {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
 
-                    >a:hover {
-                        background-color: rgba(0, 0, 0, 0.133);
-                        border-radius: 5px;
+                    & .nav-item {
+                        >a {
+                            display: block;
+                            text-align: center;
+                            font-size: 20px;
+                            padding: 10px;
+                            color: #fff;
+                        }
+
+                        >a:hover {
+                            background-color: rgba(0, 0, 0, 0.133);
+                            border-radius: 5px;
+                        }
                     }
                 }
+
             }
         }
 
@@ -149,5 +158,50 @@ header {
     margin-right: 10px;
     color: #fff;
     cursor: pointer;
+}
+
+/* navbar for smartphones viewport */
+@media screen and (max-width: 450px) {
+    .navigation {
+        max-height: auto;
+    }
+
+    header {
+        margin-inline: 10px;
+
+        >.navbar {
+
+            >.navigation {
+                height: auto;
+
+                >.nav-list {
+                    >.close-icon {
+                        font-size: 30px;
+                    }
+
+                    & div.wrapper {
+                        flex-wrap: wrap;
+
+                        & .nav-item {
+                            >a {
+                                font-size: 15px;
+                                padding: 5px;
+                                margin: auto .5rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 372px) {
+
+    #navigation {
+        min-height: 100px;
+    }
+
 }
 </style>
