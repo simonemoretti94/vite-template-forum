@@ -85,7 +85,7 @@ export default {
                 </ul>
             </nav>
             <a id="iconBar" href="#" class="bars-icon" @click="hideIconBar()"><i class="fa fa-bars"></i></a>
-            <div :style="brandResize" class="brand">My Place
+            <div :style="brandResize" class="brand">Ereignis
             </div>
         </div>
 
