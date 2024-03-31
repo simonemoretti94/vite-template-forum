@@ -1,22 +1,90 @@
 <script>
 export default {
     name: 'AppHeader',
+    data() {
+        return {
+            //nav variables
+            iconBar: null,
+            navigation: null,
+            brand: null,
+            isOpen: false,
+
+            //screen width variables
+            screenX: window.innerWidth,
+            screenY: window.innerHeight,
+
+            teststring: null,
+        }
+    },
+    methods: {
+
+        hideIconBar() {
+            //getting elements
+            this.iconBar = document.getElementById('iconBar');
+            this.navigation = document.getElementById('navigation');
+
+
+            //script
+            this.iconBar.setAttribute('style', 'display:none;');
+            this.navigation.classList.remove('hide');
+
+            //setting isOpen for div.brand font-size purpose
+            this.isOpen = true;
+
+        },
+
+        showIcon() {
+            //getting elements
+            this.iconBar = document.getElementById('iconBar');
+            this.navigation = document.getElementById('navigation');
+
+
+            //script
+            this.iconBar.setAttribute('style', 'display: block');
+            this.navigation.classList.add('hide');
+
+            //setting isOpen for div.brand font-size purpose
+            this.isOpen = false;
+        },
+
+        //div.brand servers
+        updateScreenX() {
+            this.screenX = window.innerWidth;
+        },
+    },
+    created() {
+        window.addEventListener('resize', this.updateScreenX);
+    },
+    computed: {
+        brandResize() {
+            if (this.screenX < 680 && this.screenX > 516 && this.isOpen) {
+                return 'font-size: 30px';
+            }
+            else if (this.screenX < 516 && this.isOpen) {
+                return 'font-size: 25px';
+            }
+            else if (this.screenX <= 320 && this.isOpen) {
+                return 'font-size: 15px';
+            }
+        }
+    },
 }
 </script>
 
 <template>
     <header>
         <div class="navbar">
-            <nav class="navigation hide">
+            <nav id="navigation" class="navigation hide">
                 <ul class="nav-list">
-                    <span class="close-icon"><i class="fa fa-close"></i></span>
+                    <span class="close-icon" @click="showIcon()"><i class="fa fa-close"></i></span>
                     <li class="nav-item"><a href="#">Home</a></li>
                     <li class="nav-item"><a href="#">Forum</a></li>
                     <li class="nav-item"><a href="#">Details</a></li>
                 </ul>
             </nav>
-            <a href="#" class="bars-icon"><i class="fa fa-bars"></i></a>
-            <div class="brand">My Forum</div>
+            <a id="iconBar" href="#" class="bars-icon" @click="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div :style="brandResize" class="brand">My Forum
+            </div>
         </div>
     </header>
 </template>
@@ -65,6 +133,12 @@ header {
                     }
                 }
             }
+        }
+
+        & div.brand {
+            font-size: 40px;
+            display: inline-block;
+            font-family: "Orbitron", sans-serif;
         }
     }
 }
