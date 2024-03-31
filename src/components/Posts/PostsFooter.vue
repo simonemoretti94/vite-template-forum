@@ -8,7 +8,7 @@ export default {
 <template>
     <footer>
         <span>
-            &copy; &nbsp;Simone Moretti | All rights reserved <a href="../../posts.html">Index</a>
+            &copy; &nbsp;Simone Moretti | All rights reserved <a href="../../index.html">Index</a>
         </span>
     </footer>
 </template>

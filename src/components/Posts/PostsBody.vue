@@ -31,6 +31,8 @@ export default {
                     </div>
                 </div>
 
+                <hr class="subforum-devider">
+
                 <div class="table-row">
                     <div class="status"><i class="fa fa-cat"></i></div>
                     <div class="subjects"><a href="#">Is learning CSS worth it in 2024?</a><br><span>Started by <b><a
@@ -42,6 +44,8 @@ export default {
                         March 2024 <br> By <b><a href="#">Luca</a></b>
                     </div>
                 </div>
+
+                <hr class="subforum-devider">
 
                 <div class="table-row">
                     <div class="status"><i class="fa fa-rocket"></i></div>
@@ -55,6 +59,8 @@ export default {
                     </div>
                 </div>
 
+                <hr class="subforum-devider">
+
                 <div class="table-row">
                     <div class="status"><i class="fa fa-book"></i></div>
                     <div class="subjects"><a href="#">Is learning PHP worth it in 2024?</a><br><span>Started by <b><a
@@ -66,6 +72,8 @@ export default {
                         March 2024 <br> By <b><a href="#">Sara</a></b>
                     </div>
                 </div>
+
+                <hr class="subforum-devider">
 
                 <div class="table-row">
                     <div class="status"><i class="fa fa-dragon"></i></div>
@@ -177,6 +185,10 @@ main {
 
 }
 
+.subforum-devider {
+    display: none;
+}
+
 /* pagination */
 
 .pagination {
@@ -223,6 +235,16 @@ main {
     & span {
         font-size: 20px;
         margin-block: .7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subforum-devider {
+        display: block;
+        border: 0;
+        height: 1px;
+        margin: 1rem auto;
+        background-image: linear-gradient(90deg, black, white, black);
     }
 }
 </style>
