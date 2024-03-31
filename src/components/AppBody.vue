@@ -192,6 +192,10 @@ export default {
     width: 100%;
 }
 
+.subforum-devider {
+    display: none;
+}
+
 /* Smartphones Viewport */
 @media screen and (max-width: 460px) {
 
