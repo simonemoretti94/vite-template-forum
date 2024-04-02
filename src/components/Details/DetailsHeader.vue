@@ -267,10 +267,21 @@ button#button-search {
 
 @media screen and (max-width: 372px) {
 
-    #navigation {
-        min-height: 100px;
-    }
+    header {
+        >.navbar {
+            >#navigation {
+                min-height: 100px;
 
+                >ul.nav-list {
+                    & div#wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
 
     .search-box select,
     input,
