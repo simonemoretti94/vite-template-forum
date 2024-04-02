@@ -8,8 +8,8 @@ export default {
     <div class="container">
         <div class="posts-table">
             <div class="navigate">
-                <span><a href="#">My Forum - Forums</a> >> <a href="#">Random Forum</a></span> >> <span><a
-                        href="#">Random Post</a></span>
+                <span><a href="./../../../index.html">My Forum - Forums</a> >> <a href="./../../../posts.html">Random
+                        Forum</a></span> >> <span><a href="../../../details.html">Random Post</a></span>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@ export default {
             <div class="posts-table">
 
                 <div class="navigate">
-                    <span><a href="#">My Forum - Forums</a> >> <a href="#">Random Topic</a></span>
+                    <span><a href="./../../../index.html">My Forum - Forums</a> >> <a href="#">Random Topic</a></span>
                 </div>
 
                 <div class="table-head">
