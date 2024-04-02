@@ -206,6 +206,7 @@ export default {
         & .content {
             flex: 80%;
             font-size: 15px;
+            padding: 15px 15px 15px 0;
 
             >hr {
                 margin-bottom: .5rem;
