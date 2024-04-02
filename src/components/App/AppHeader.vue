@@ -80,7 +80,7 @@ export default {
                     <div id="wrapper" class="wrapper">
                         <li class="nav-item"><a href="#">Home</a></li>
                         <li class="nav-item"><a href="./../../../posts.html">Posts</a></li>
-                        <li class="nav-item"><a href="#">Details</a></li>
+                        <li class="nav-item"><a href="./../../../details.html">Details</a></li>
                     </div>
                 </ul>
             </nav>

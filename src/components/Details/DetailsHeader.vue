@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'PostsHeader',
+    name: 'DetailsHeader',
     data() {
         return {
             //nav variables
@@ -78,14 +78,14 @@ export default {
                 <ul class="nav-list">
                     <span id="closeIcon" class="close-icon" @click="showIcon()"><i class="fa fa-close"></i></span>
                     <div id="wrapper" class="wrapper">
-                        <li class="nav-item"><a href="./../../index.html">Home</a></li>
-                        <li class="nav-item"><a href="#">Posts</a></li>
-                        <li class="nav-item"><a href="../../../details.html">Details</a></li>
+                        <li class="nav-item"><a href="../../../index.html">Home</a></li>
+                        <li class="nav-item"><a href="./../../../posts.html">Posts</a></li>
+                        <li class="nav-item"><a href="#">Details</a></li>
                     </div>
                 </ul>
             </nav>
             <a id="iconBar" href="#" class="bars-icon" @click="hideIconBar()"><i class="fa fa-bars"></i></a>
-            <div :style="brandResize" class="brand">My Posts
+            <div :style="brandResize" class="brand">Details
             </div>
         </div>
 
