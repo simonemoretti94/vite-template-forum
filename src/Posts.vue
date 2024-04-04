@@ -1,8 +1,7 @@
 <script>
-//import PostsHeader from './components/Posts/PostsHeader.vue';
 import sharedHeader from './components/shared/sharedHeader.vue';
 import PostsBody from './components/Posts/PostsBody.vue';
-import PostsFooter from './components/Posts/PostsFooter.vue';
+import sharedFooter from './components/shared/sharedFooter.vue';
 
 export default {
     name: 'Posts',
@@ -14,10 +13,9 @@ export default {
         }
     },
     components: {
-        //PostsHeader,
         sharedHeader,
         PostsBody,
-        PostsFooter,
+        sharedFooter,
     }
 }
 </script>
@@ -25,7 +23,6 @@ export default {
 <template>
     <sharedHeader :headerApp="this.headerApp" :headerPosts="this.headerPosts" :headerDetails="this.headerDetails">
     </sharedHeader>
-    <!-- <PostsHeader></PostsHeader> -->
     <PostsBody></PostsBody>
-    <PostsFooter></PostsFooter>
+    <sharedFooter></sharedFooter>
 </template>
