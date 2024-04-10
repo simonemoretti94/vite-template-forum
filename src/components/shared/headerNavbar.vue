@@ -21,9 +21,19 @@ export default {
         }
     },
     props: {
-        headerApp: Boolean,
-        headerDetails: Boolean,
-        headerPosts: Boolean,
+
+        headerApp: {
+            type: Boolean,
+            default: false,
+        },
+        headerDetails: {
+            type: Boolean,
+            default: false,
+        },
+        headerPosts: {
+            type: Boolean,
+            default: false,
+        },
     },
     mounted() {
         this.app = this.$props.headerApp;
