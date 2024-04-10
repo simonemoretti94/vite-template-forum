@@ -49,13 +49,13 @@ header {
 /* search box */
 
 .search-box {
-    border: solid 1 px #52057b;
+    border: solid 1 px var(--violet);
     margin-top: 1.5rem;
     padding: 40px;
     display: flex;
     flex: wrap;
     justify-content: center;
-    box-shadow: 1px 2px 3px #52057b;
+    box-shadow: 1px 2px 3px var(--violet);
 }
 
 .search-box select,

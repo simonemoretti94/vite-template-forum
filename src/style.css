@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --violet: #52057b;
+}
+
 html {
   font-size: 12px;
   background-color: black;

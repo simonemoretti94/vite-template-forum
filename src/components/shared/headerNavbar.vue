@@ -86,9 +86,6 @@ export default {
 </script>
 
 <template>
-    <!-- headerApp: true,
-    headerPosts: null,
-    headerDetails: null, -->
 
     <!-- index navbar -->
     <div v-if="this.app" class="navbar">
@@ -151,7 +148,7 @@ export default {
     align-items: center;
 
     >.navigation {
-        background-color: #52057b;
+        background-color: var(--violet);
         padding: 10px;
         width: 65%;
         border-radius: 5px;
@@ -174,7 +171,7 @@ export default {
                 border-radius: 5px;
 
                 background-color: rgb(0, 0, 0);
-                box-shadow: 1.5px 2px 3px rgba(165, 32, 165, 0.593);
+                box-shadow: 1.5px 2px 3px var(--violet);
             }
 
             >.close-icon:hover {

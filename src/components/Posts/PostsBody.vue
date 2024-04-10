@@ -126,7 +126,7 @@ main {
             & div {
                 padding: 5px;
                 margin: 2px;
-                background-color: #2C2C2C;
+                background-color: #2C2C2C !important;
                 font-weight: bold;
             }
 
