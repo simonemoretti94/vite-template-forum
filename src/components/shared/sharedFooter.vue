@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AppFooter',
+    name: 'sharedFooter',
     data() {
         return {
 
